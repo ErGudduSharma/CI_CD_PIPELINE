@@ -17,4 +17,13 @@ all package that is importent to run the application
  open terminal and write ....uv add -r requirements.txt
 
  create an app.py file where we have all the logics for model training
- 
+
+after all the steps... we upload allof theseon github 
+
+git init
+git add .
+git commit 'added'
+git branch -M main
+git remote add origin https://github.com/ErGudduSharma/CI_CD_PIPELINE.git
+
+git push -u origin main
