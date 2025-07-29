@@ -27,3 +27,27 @@ git branch -M main
 git remote add origin https://github.com/ErGudduSharma/CI_CD_PIPELINE.git
 
 git push -u origin main
+
+
+now create a new folder    .github/workflows/s3_sync.yaml
+
+now we will go to AWS--->
+IAM --->Users ---> New User ---> Attach Policy(Administrator Access, AmazonS3FullAccess)
+
+---> create User(CLI)---> CLICK CREATE ACCESS KEY---> WE GET ACCEES KEY, ACCESS KEY ID
+
+----> AWS ---> s3 bucket ---> New bucket Name (this will equal that is present in s3_sync.yaml)
+
+go to github ---> settings --> Actions---> Secretes ---> Add secrets one by one 
+
+
+go to github-->actions--->run all the jobs.
+
+
+-------------------------------------------------------
+-----------------------------------------------------------
+
+delete all the resources
+
+step-1   delete s3 bucket
+step-2   delete the user from IAM role
